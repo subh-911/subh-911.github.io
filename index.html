@@ -296,7 +296,7 @@
             height: 400px;
         }
 
-        .profile-img {
+        /* .profile-img {
             width: 100%;
             height: 100%;
             background: var(--gradient-accent);
@@ -309,6 +309,26 @@
             box-shadow: var(--shadow-lg);
             position: relative;
             overflow: hidden;
+        } */
+         
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-accent);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 30px;
         }
 
         .floating-icons {
@@ -1025,7 +1045,7 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">S K.</a>
+                <a href="#" class="logo">Subham Kumar</a>
                 <ul class="nav-links">
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -1047,7 +1067,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>S K</h1>
+                    <h1>Subham Kumar</h1>
                     <div class="title">Senior Software Engineer</div>
                     <div class="description">
                         Passionate backend developer with <strong>5+ years of experience</strong> in designing, building, and optimizing backend systems for high-performance applications. Expert in distributed systems, security, and performance optimization.
@@ -1070,7 +1090,8 @@
                 <div class="hero-visual">
                     <div class="profile-container">
                         <div class="profile-img">
-                            <i class="fas fa-user-tie"></i>
+                            <!--<i class="fas fa-user-tie"></i>-->
+                            <img src="images/profile.jpg" alt="Profile Photo">
                         </div>
                         <div class="floating-icons">
                             <div class="floating-icon"><i class="fab fa-python"></i></div>
@@ -1102,8 +1123,8 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <h3>Who Am I?</h3>
-                    <p>I'm S K, a Senior Software Engineer based in Bangalore, India. With over 5 years of experience, I specialize in designing and optimizing backend systems for high-performance applications, focusing on scalability, security, and reliability.</p>
+                    <!-- <h3>Who am I?</h3>-->
+                    <p>I'm Subham Kumar, a Senior Software Engineer based in Bangalore, India. With over 5 years of experience, I specialize in designing and optimizing backend systems for high-performance applications, focusing on scalability, security, and reliability.</p>
                     <p>My passion lies in solving complex technical challenges and driving innovation through clean code and modern architectures. I thrive in collaborative environments, mentoring teams and aligning technical solutions with business objectives.</p>
                     
                     <div class="info-grid">
@@ -1120,12 +1141,12 @@
                         <div class="info-item">
                             <i class="fas fa-envelope"></i>
                             <h4>Email</h4>
-                            <p>sk.engineer@gmail.com</p>
+                            <p>subhamkr911@gmail.com</p>
                         </div>
                         <div class="info-item">
                             <i class="fab fa-github"></i>
                             <h4>GitHub</h4>
-                            <p>github.com/SK-Engineer</p>
+                            <p>https://github.com/subh-911</p>
                         </div>
                     </div>
                     <a href="#" class="btn btn-primary">Download Resume</a>
@@ -1313,30 +1334,30 @@
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/subham-kumar-a57b031b6/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/subh-911" title="GitHub"><i class="fab fa-github"></i></a>
+                        <!--<a href="#" title="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        <a href="mailto:subhamkr911@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="contact-card">
                     <h3>Send a Message</h3>
-                    <form>
+                    <form action="https://formsubmit.co/subhamkr911@gmail.com" method="POST">
                         <div class="form-group">
                             <label for="name">Full Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control" placeholder="Enter subject" required>
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Enter subject" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                            <textarea name="message" id="message" class="form-control" placeholder="Enter your message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -1358,7 +1379,7 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <p class="copyright">© 2025 S K. All Rights Reserved. | Open to new opportunities</p>
+                <p class="copyright">© 2025 Subham Kumar All Rights Reserved</p>
             </div>
         </div>
     </footer>
